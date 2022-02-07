@@ -1,3 +1,5 @@
+
+
 // *** List of falsy values ****
 //
 // false
@@ -20,7 +22,18 @@
 
 //TODO write example
 
+//const test = ""; //Falsy
+//const test = 0;
+//const test = false;
+//const test = undefined;
+//const test = null;
+const test = "Sudi";
 
+if (test) {
+    console.log("truly")
+} else {
+    console.log("falsy")
+}
 
 
 // That applies to all the falsy values,
@@ -35,4 +48,34 @@
 
 
 
-// Example 2 Real life example
+// Example 2 Real life example some data from the API
+
+const carsData = [
+    {
+        make: "tesla",
+        isElectric: true
+    },
+    {
+        make: "BMW",
+        isElectric: false
+    },
+    {
+        make: "Volvo",
+        isElectric: null
+    },
+]
+
+
+carsData.forEach(function (car) {
+    console.log(car);
+    if (!car.isElectric) {
+        console.log("car make is " + car.make + " and it is not Electric");
+    }
+});
+
+/* carsData.forEach(function (car) {
+    console.log(car);
+    if (car.isElectric) {
+        console.log("car make is " + car.make + " and it is Electric");
+    }
+}); */
