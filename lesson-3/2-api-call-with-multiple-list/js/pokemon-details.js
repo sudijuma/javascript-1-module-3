@@ -24,8 +24,6 @@ async function getPokemonDetails() {
         console.log('weight of the pokemon is', pokemonWeight, "kg");
         pokemonDetails.innerHTML = `<div>The PokeMon weight is : ${pokemonWeight}kg</div>`
     } catch (error) {
-        console.log(error)
-
     }
 }
 getPokemonDetails();
