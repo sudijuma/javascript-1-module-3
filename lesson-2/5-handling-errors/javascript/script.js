@@ -8,7 +8,7 @@ const factsContainer = document.querySelector(".my-cats-facts");
 
 fetch(URL)
     .then((response) => response.json())
-    .then((data) => {
+    .then((data) => { 
         console.log(data.data);
         factsContainer.innerHTML = "";
         const myCatFactsArr = data.data;
