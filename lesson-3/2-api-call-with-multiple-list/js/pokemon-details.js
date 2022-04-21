@@ -1,5 +1,5 @@
 console.log(document.location.search)
-const queryString = document.location.search;
+const queryString = window.location.search;
 
 //in order to get the value
 const params = new URLSearchParams(queryString);
