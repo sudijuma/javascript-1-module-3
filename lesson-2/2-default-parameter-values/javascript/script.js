@@ -25,7 +25,7 @@ printMessage("hello Sudi");
 function getSum(numA = 4, numB = 5){
     return numA + numB;
 };
-const totalSum = getSum(4,5);
+const totalSum = getSum(5,67);
 
 console.log("totalSum: " + totalSum);
 
